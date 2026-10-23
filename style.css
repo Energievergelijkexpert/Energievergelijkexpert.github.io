@@ -1,0 +1,63 @@
+:root{--grond:#F1F4F3;--vlak:#FFFFFF;--vlak2:#F7FAF9;--inkt:#0E1B19;--inkt2:#2C3B38;--grijs:#5C6E69;--lijn:#E1E7E5;--groen:#0A9C72;--groen2:#077352;--mint:#57E3AC;--wasgroen:#E4F4EE;--volt:#C9860B;--wasvolt:#FBF0DA;--nacht:#0A1211;--nacht2:#10201C}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--grond);color:var(--inkt);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--groen2);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--inkt)}
+img,video{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.lees{max-width:720px}
+header.top{background:var(--nacht);color:#E9F1EE}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px 22px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.merk{display:flex;align-items:center;gap:10px;font-weight:700;color:#E9F1EE;text-decoration:none;font-size:17px;letter-spacing:-.01em}
+.merk b{color:var(--mint);font-weight:inherit}
+.merk img{width:30px;height:30px}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+nav a{text-decoration:none;color:#C5D2CE;font-size:15px}
+nav a:hover,nav a[aria-current]{color:var(--mint)}
+.intro{padding:40px 0 22px}
+.label{display:inline-block;background:var(--wasgroen);color:var(--groen2);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;padding:4px 10px;border-radius:999px;margin-bottom:14px}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px;max-width:840px;text-wrap:balance}
+.kort{font-size:19px;max-width:720px;margin:0 0 8px;color:var(--inkt2)}
+.meta{font-size:14px;color:var(--grijs);margin:10px 0 0}
+.hero{margin:0 0 8px}
+.hero img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:14px}
+main{padding:12px 0 24px}
+h2{font-size:clamp(23px,3vw,29px);line-height:1.2;letter-spacing:-.01em;margin:44px 0 12px;text-wrap:balance}
+h3{font-size:19px;margin:26px 0 6px}
+p{margin:0 0 16px}
+ul,ol{padding-left:22px;margin:0 0 18px}
+li{margin:6px 0}
+figure{margin:28px 0}
+figure img{border-radius:12px;background:var(--lijn)}
+figcaption{font-size:14px;color:var(--grijs);margin-top:8px}
+.video{margin:0 0 10px;background:var(--nacht);border-radius:14px;overflow:hidden}
+.video video{width:100%;aspect-ratio:16/9;background:var(--nacht)}
+.video.staand{max-width:340px}
+.video.staand video{aspect-ratio:9/16}
+.hoofdstukken{list-style:none;padding:0;margin:16px 0 20px;display:grid;gap:8px}
+.hoofdstukken li{margin:0;background:var(--vlak);border:1px solid var(--lijn);border-radius:10px;padding:10px 14px;display:flex;gap:12px}
+.hoofdstukken b{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;color:var(--groen2);min-width:3.2em}
+.transcript{background:var(--vlak);border:1px solid var(--lijn);border-radius:12px;padding:18px 20px;margin:12px 0 24px}
+.transcript p{font-size:16px;color:var(--inkt2)}
+.transcript p:last-child{margin:0}
+.cijfers{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:24px 0}
+.cijfer{background:var(--vlak);border:1px solid var(--lijn);border-radius:12px;padding:14px 16px}
+.cijfer b{display:block;font-size:22px;line-height:1.2;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.cijfer span{font-size:14px;color:var(--grijs)}
+.tabel{overflow-x:auto;margin:16px 0 20px;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:15px;background:var(--vlak);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--lijn);vertical-align:top}
+th{background:var(--nacht2);color:#E9F1EE;font-weight:600}
+td.getal{font-variant-numeric:tabular-nums;white-space:nowrap}
+.blok{background:var(--wasgroen);padding:16px 18px;border-radius:12px;margin:28px 0}
+.blok.volt{background:var(--wasvolt)}
+.blok p:last-child,.blok ul:last-child{margin-bottom:0}
+.bron{font-size:14px;color:var(--grijs)}
+.bronnen{border-top:1px solid var(--lijn);margin-top:40px;padding-top:12px}
+.bronnen li{font-size:14px;color:var(--grijs)}
+footer{background:var(--nacht);color:#C5D2CE;margin-top:40px;padding:28px 0;font-size:14px}
+footer b{color:#E9F1EE}
+footer a{color:var(--mint)}
+footer p{margin:0 0 8px}
+@media(max-width:600px){body{font-size:16px}.intro{padding:28px 0 18px}.kort{font-size:17px}.hero img{aspect-ratio:4/3}nav a{font-size:14px}.video.staand{max-width:100%}}
